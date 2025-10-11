@@ -1,0 +1,180 @@
+/* 
+- White: hsl(0, 0%, 100%)
+
+- Stone 100: hsl(30, 54%, 90%)
+- Stone 150: hsl(30, 18%, 87%)
+- Stone 600: hsl(30, 10%, 34%)
+- Stone 900: hsl(24, 5%, 18%)
+
+- Brown 800: hsl(14, 45%, 36%)
+
+- Rose 800: hsl(332, 51%, 32%)
+- Rose 50: hsl(330, 100%, 98%)
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  width: 736px;
+  padding: 40px;
+  padding-bottom: 28px;
+  border-radius: 24px;
+  margin: 124px auto 84px auto;
+}
+
+.recipe-image {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.section-information {
+  margin-top: 32px;
+}
+
+.recipe-title {
+  color: hsl(24, 5%, 18%);
+  font-family: "Young Serif", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.recipe-description {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 32px;
+}
+
+.recipe-description {
+  line-height: 1.4;
+}
+
+.section-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 26px 28px;
+  border-radius: 12px;
+  /* margin-bottom: 32px; */
+}
+
+.heading-time {
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+ul,
+ol {
+  /* pushes list to the right */
+  margin-left: 22px;
+}
+
+ul li,
+ol li {
+  color: hsl(30, 10%, 34%);
+  /* creates space beteen bullet point and text */
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* Modify bullet points */
+ul li::marker,
+ol li::marker {
+  font-family: "Outfit", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+span {
+  font-weight: 600;
+  color: hsl(30, 10%, 34%);
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.section-ingredients {
+  padding: 32px 0;
+  /* adds border separator */
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.section-instruction {
+  padding: 30px 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+ol li {
+  line-height: 1.37;
+}
+
+.section-nutrition {
+  padding-top: 28px;
+  /* border-bottom: 1px solid hsl(30, 18%, 87%); */
+}
+
+/************************/
+/* TABLE */
+
+table {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+}
+
+/* adds left padding to every first td element */
+tr td:first-child {
+  padding-left: 30px;
+}
+
+td {
+  width: 51%;
+  padding: 14px 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr td:last-child {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+/* Removes border from last table row */
+tr:last-child td {
+  border-bottom: 0;
+}
+
+/************************/
+/* ATTRIBUTION */
+
+.attribution {
+  font-size: 0.688rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
