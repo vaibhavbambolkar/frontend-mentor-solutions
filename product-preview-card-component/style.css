@@ -1,0 +1,137 @@
+:root {
+  --dark-cyan: rgb(60, 128, 103);
+  --cream: rgb(242, 235, 227);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+}
+
+.card {
+  background-color: var(--white);
+  width: 600px;
+  margin: 174px auto;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+}
+
+.card-text-box {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.card-category {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: var(--very-dark-blue);
+  line-height: 1;
+}
+
+.card-description {
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  line-height: 1.68;
+}
+
+.card-price {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-price--after {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dark-cyan);
+}
+
+.card-price--before {
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  letter-spacing: -0.5px;
+}
+
+.cta {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cta:hover {
+  background-color: rgb(26, 64, 49);
+  cursor: pointer;
+}
+
+.cta span {
+  letter-spacing: 0.5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  transform: translateY(-10px);
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
+/* @media screen and (max-width: 375px) {
+  .card {
+    width: 345px;
+    margin: 0 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .card-text-box {
+    padding: 25px;
+  }
+} */
